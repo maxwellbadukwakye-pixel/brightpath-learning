@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free, beginner-friendly lessons in web development, HTML, CSS, JavaScript, Python and Microsoft Excel from Maxwell Kwakye Learning Code.">
+  <meta name="theme-color" content="#061a33">
+  <title>Maxwell Kwakye Learning Code | Learn, Practise, Build</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Maxwell Kwakye Learning Code home">
+      <img src="assets/logo.svg" alt="" class="brand-logo">
+      <span><strong>Maxwell Kwakye</strong><b>Learning Code</b></span>
+    </a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a class="active" href="#home">Home</a><a href="#courses">Courses</a><a href="#learn">Learn</a><a href="#resources">Resources</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <form class="search" id="search-form" role="search">
+      <input id="search-input" type="search" placeholder="Search topics..." aria-label="Search learning topics">
+      <button aria-label="Search">⌕</button>
+    </form>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow">LEARN <span>•</span> PRACTISE <span>•</span> BUILD YOUR FUTURE</p>
+        <h1>Welcome to<br>Maxwell Kwakye<br><em>Learning Code</em></h1>
+        <p class="hero-copy">Your free learning space for Web Development and Excel.<br class="desktop"> Build real skills, solve real problems and achieve your goals.</p>
+        <div class="hero-actions"><a class="button primary" href="#courses">▶ &nbsp; Start Learning</a><a class="button outline" href="#courses">▤ &nbsp; Explore Courses</a></div>
+      </div>
+      <img class="hero-art" src="assets/learning-hero.png" alt="Learning illustration featuring a laptop with code, Excel, and programming books">
+    </section>
+
+    <section class="courses section" id="courses">
+      <div class="section-heading"><h2>Our Learning Courses</h2><p>Choose a course and start learning at your own pace. All lessons are free and easy to follow.</p></div>
+      <div class="course-grid" id="course-grid">
+        <article class="course-card" data-search="web development html css javascript websites coding">
+          <div class="course-top"><div class="course-icon purple">&lt;/&gt;</div><div><h3>Web Development</h3><p class="course-sub">(HTML, CSS &amp; JavaScript)</p></div></div>
+          <p>Learn how to create beautiful and interactive websites using HTML, CSS and JavaScript. Build real projects step by step.</p>
+          <a class="course-button purple-btn" href="#web-lessons">→ &nbsp; Start Web Development</a>
+        </article>
+        <article class="course-card" data-search="python programming code beginners">
+          <div class="course-top"><div class="course-icon blue">Py</div><div><h3>Python Programming</h3></div></div>
+          <p>Learn Python from scratch to build programs, solve problems and prepare for the future.</p>
+          <a class="course-button blue-btn" href="#python-lessons">→ &nbsp; Start Python</a>
+        </article>
+        <article class="course-card" data-search="microsoft excel spreadsheet formulas charts data">
+          <div class="course-top"><div class="course-icon green">X</div><div><h3>Microsoft Excel</h3></div></div>
+          <p>Master Excel for school, work and personal use. Learn formulas, charts, data management and more.</p>
+          <a class="course-button green-btn" href="#excel-lessons">→ &nbsp; Start Excel</a>
+        </article>
+        <article class="course-card" data-search="practice exams quiz tests exercises">
+          <div class="course-top"><div class="course-icon orange">☷</div><div><h3>Practice &amp; Exams</h3></div></div>
+          <p>Test your knowledge with practice questions, quizzes and real exam-style exercises.</p>
+          <a class="course-button orange-btn" href="#practice">→ &nbsp; View Practice Tests</a>
+        </article>
+      </div>
+      <p id="search-status" class="search-status" aria-live="polite"></p>
+      <div class="benefits">
+        <div><span>🎓</span><p><strong>100% Free</strong><small>No payment required</small></p></div>
+        <div><span>▣</span><p><strong>Learn Anywhere</strong><small>On any device, anytime</small></p></div>
+        <div><span>⬟</span><p><strong>Step-by-Step Guides</strong><small>Easy to follow lessons</small></p></div>
+        <div><span>★</span><p><strong>Build Real Skills</strong><small>For school, jobs and the future</small></p></div>
+      </div>
+    </section>
+
+    <section class="lesson-section section" id="learn">
+      <div class="section-heading"><h2>Start Learning Today</h2><p>Pick a topic below to see your first learning steps.</p></div>
+      <div class="lesson-grid">
+        <article class="lesson-panel" id="web-lessons"><span class="tag">WEB DEVELOPMENT</span><h3>Build your first website</h3><ol><li><strong>HTML:</strong> Create the structure of a webpage.</li><li><strong>CSS:</strong> Add colours, spacing and a responsive layout.</li><li><strong>JavaScript:</strong> Make the page interactive.</li></ol><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener">Free web development lessons ↗</a></article>
+        <article class="lesson-panel" id="excel-lessons"><span class="tag green-tag">MICROSOFT EXCEL</span><h3>Work confidently with data</h3><ol><li>Enter and format data in cells.</li><li>Use SUM, AVERAGE, MIN and MAX.</li><li>Create charts and organise information.</li></ol><a href="https://support.microsoft.com/excel" target="_blank" rel="noopener">Excel help and learning ↗</a></article>
+        <article class="lesson-panel" id="python-lessons"><span class="tag blue-tag">PYTHON</span><h3>Learn programming basics</h3><ol><li>Print messages and use variables.</li><li>Practise conditions and loops.</li><li>Build small programs step by step.</li></ol><a href="https://docs.python.org/3/tutorial/" target="_blank" rel="noopener">Official Python tutorial ↗</a></article>
+        <article class="lesson-panel" id="practice"><span class="tag orange-tag">PRACTICE</span><h3>Check your understanding</h3><p>Try these quick questions. Choose an answer and check your result.</p><div class="quiz" id="quiz"><p><strong>1.</strong> Which language gives a webpage its structure?</p><label><input type="radio" name="q1" value="css"> CSS</label><label><input type="radio" name="q1" value="html"> HTML</label><label><input type="radio" name="q1" value="excel"> Excel</label><button class="button primary quiz-check" id="check-answer">Check answer</button><p id="quiz-result" aria-live="polite"></p></div></article>
+      </div>
+    </section>
+
+    <section class="about section" id="about"><div><p class="eyebrow">ABOUT THIS PLATFORM</p><h2>Learn today. Build tomorrow.</h2><p>Maxwell Kwakye Learning Code is a learning project created to help beginners explore web development, programming and Microsoft Excel through clear, practical learning steps.</p></div><div class="about-note"><strong>Our goal</strong><p>Make digital skills easier to learn, practise and use in everyday life.</p></div></section>
+    <section class="contact section" id="contact"><h2>Keep learning with us</h2><p>Have a suggestion for a lesson? Add your preferred contact details here when you are ready to receive messages.</p><a class="button primary" href="mailto:hello@example.com?subject=Maxwell%20Kwakye%20Learning%20Code">Contact the learning team</a><small>Before publishing, replace hello@example.com with your own email address.</small></section>
+  </main>
+
+  <footer class="footer" id="resources">
+    <a class="brand footer-brand" href="#home"><img src="assets/logo.svg" alt="" class="brand-logo"><span><strong>Maxwell Kwakye Learning Code</strong><small>Learn Today • Build Tomorrow</small></span></a>
+    <div class="footer-links"><a href="#home">Home</a><a href="#courses">Courses</a><a href="#learn">Learn</a><a href="#resources">Resources</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+    <p class="copyright">© <span id="year"></span> Maxwell Kwakye Learning Code. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
